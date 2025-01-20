@@ -21,7 +21,18 @@ The pipeline requires a set of arguments.
 
 - `--fasta`
    - The fasta file before curation, e.g., `/path/to/assembly_before_curation.fa`
+   - 
+- `--idxfile`
+   - The fasta file index file before curation, e.g., `/path/to/assembly_before_curation.fa.fai`
+     
+- `--sample`
+   - Output pretext map name, e.g., `assembly_after_curation`
+ 
+- `--agp`
+   - Curated AGP file output from PretextMap, e.g., `/path/to/curated.agp`
 
+- `--hicmap`
+  - Alignment bin file before curation,  e.g., `/path/to/assembly_before_curation.bin`
 -->
 
 Now, you can run the pipeline using:
