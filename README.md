@@ -22,12 +22,16 @@ The pipeline requires a set of arguments.
 `fasta`
 fasta file before curation
 
-```sample
-output pretext map name
-CONTROL_REP1,AEG588A1_S1_L002_R1_001.fastq.gz,AEG588A1_S1_L002_R2_001.fastq.gz
+```
+aPelLes1_before_curation.fa
 ```
 
-Each row represents a fastq file (single-end) or a pair of fastq files (paired end).
+`sample`
+Output pretext map name
+```
+aPelLes1_after_curation
+```
+
 
 -->
 
