@@ -1,2 +1,0 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-1	22/a312ad	823074	ZIPPYPRETEXT:ZIPPYPRETEXT_MAP:ZIPPYPRETEXT:RAPID_SPLIT (bFalPer5_c1)	FAILED	1	2024-10-07 13:57:35.064	4.5s	10ms	-	-	-	-	-
