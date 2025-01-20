@@ -42,12 +42,12 @@ Now, you can run the pipeline using:
 ```bash
 nextflow run sanger-tol/zippypretext \
    -profile <docker/singularity/.../institute> \
-   --fasta /path/to/assembly_before_curation.fa \
-   --idxfile /path/to/assembly_before_curation.fa.fai \
-   --sample assembly_after_curation \
-   --agp /path/to/curated.agp \
-   --hicmap /path/to/assembly_before_curation.bin \
-   --outdir <OUTDIR>
+   --fasta { /path/to/assembly_before_curation.fa } \
+   --idxfile { /path/to/assembly_before_curation.fa.fai } \
+   --sample { assembly_after_curation } \
+   --agp { /path/to/curated.agp } \
+   --hicmap { /path/to/assembly_before_curation.bin } \
+   --outdir { OUTDIR }
 ```
 
 > [!WARNING]
