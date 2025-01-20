@@ -1,13 +1,12 @@
-process PRETEXT_TO_TPF {
+process PRETEXT_TO_ASM {
     tag "$meta.id"
     label 'process_single'
 
-    container 'ghcr.io/sanger-tol/agp-tpf-utils:1.0.2'
+    container 'ghcr.io/sanger-tol/agp-tpf-utils:1.1.3'
 
     input:
-    tuple val(meta), path(mappedtpf)
+    tuple val(meta), path(mappedfasta)
     path(pretextagp)
-    val(autosomeprefix)
 
 
     output:
@@ -22,7 +21,7 @@ process PRETEXT_TO_TPF {
     def prefix  = task.ext.prefix   ?: "${meta.id}"
 
     """
-    pretext-to-tpf -a ${mappedtpf} -p ${pretextagp} -c ${autosomeprefix} -o ${prefix}_corrected.agp ${args}
+    pretext-to-asm -a ${mappedfasta} -p ${pretextagp} -o ${prefix}_corrected.agp ${args}
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
         agp-tpf-utils: \$(agp-tpf-utils --version | sed 's/agp-tpf-utils //g')

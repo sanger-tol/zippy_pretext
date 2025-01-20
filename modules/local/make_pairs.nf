@@ -9,7 +9,7 @@ process MAKE_PAIRS {
 
     input:
     tuple val(meta), path(alignment)
-    path(outlog)
+    path(header)
 
     output:
     tuple val(meta), path("*pairs.gz")  , emit: pairs
@@ -23,7 +23,7 @@ process MAKE_PAIRS {
     def prefix  = task.ext.prefix   ?: "${meta.id}"
 
     """
-    makepairs.sh ${outlog} ${alignment} > ${prefix}_alignment.pairs.gz
+    makepairs.sh ${header} ${alignment} > ${prefix}_alignment.pairs.gz
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
         makepairs: \$(makepairs.sh -v)

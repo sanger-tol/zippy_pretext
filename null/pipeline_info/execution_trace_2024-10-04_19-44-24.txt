@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	25/66b670	4037834	ZIPPYPRETEXT:ZIPPYPRETEXT_MAP:ZIPPYPRETEXT:RAPID_SPLIT (bFalPer5_c1)	COMPLETED	0	2024-10-04 19:44:27.688	28.2s	28s	104.3%	774.4 MB	2.2 GB	1.2 GB	45.7 KB

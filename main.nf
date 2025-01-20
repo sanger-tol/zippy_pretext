@@ -32,7 +32,6 @@ include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_zipp
 params.fasta = getGenomeAttribute('fasta')
 params.sample = getGenomeAttribute('sample')
 params.pretextagp = getGenomeAttribute('pretextagp')
-params.autosome = getGenomeAttribute('autosome')
 params.hicmap = getGenomeAttribute('hicmap')
 params.idxfile = getGenomeAttribute('idxfile')
 
@@ -50,11 +49,10 @@ workflow ZIPPYPRETEXT {
     sample     = Channel.of(params.sample)
     fasta      = Channel.of(params.fasta)
     pretextagp = Channel.of(params.agp)
-    autosome   = Channel.of(params.autosome)
     hicmap     = Channel.of(params.hicmap)
     idxfile    = Channel.of(params.idxfile)
 
-    ZIPPYPRETEXT_MAP(fasta, sample, pretextagp, idxfile, autosome, hicmap)
+    ZIPPYPRETEXT_MAP(fasta, sample, pretextagp, idxfile, hicmap)
 }
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

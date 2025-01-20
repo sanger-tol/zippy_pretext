@@ -23,7 +23,6 @@ workflow ZIPPYPRETEXT_MAP {
     sample
     pretextagp
     idxfile
-    autosome
     hicmap
 
     main:
@@ -38,13 +37,11 @@ workflow ZIPPYPRETEXT_MAP {
     // SUBWORKFLOW: Run ZIPPYPRETEXT
     //
     ZIPPYPRETEXT (
-        fasta_tuple,pretextagp,autosome,hicmap_tuple,idxfile
+        fasta_tuple,pretextagp,hicmap_tuple,idxfile
     )
-    ch_tpf = ZIPPYPRETEXT.out.tpf
     ch_versions = ch_versions.mix(ZIPPYPRETEXT.out.versions.first())
 
     emit:
-    tpf            = ch_tpf
     versions       = ch_versions                 // channel: [ path(versions.yml) ]
 }
 

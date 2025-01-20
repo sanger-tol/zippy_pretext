@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	31/7011a1	2496053	ZIPPYPRETEXT:ZIPPYPRETEXT_MAP:ZIPPYPRETEXT:RAPID_SPLIT (z11)	COMPLETED	0	2024-10-02 17:58:40.315	34.2s	34.1s	103.0%	460.9 MB	1.9 GB	1.6 GB	1.1 MB
