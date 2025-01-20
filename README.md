@@ -10,7 +10,13 @@
 
 ## Introduction
 
-**sanger-tol/zippypretext** is a bioinformatics pipeline that typically used to generate pretextmap by avoiding heavy mapping using BWA or Minimap provided required arguments are in place. Zippypretext is ideal in the case of dealing with large genome, provides benifit of being more efficent during the production in Tree of Life.
+**sanger-tol/zippypretext** is a bioinformatics pipeline typically used to generate pretext maps while avoiding the computationally expensive remapping steps associated with tools like BWA or Minimap, as long as the required arguments are provided. ZippyPretext is particularly beneficial when working with large genomes, offering significant advantages in terms of efficiency and convenience.
+
+- Time-saving for curation: ZippyPretext is ideal for quickly checking curation work without the need to perform time-consuming remapping. This allows researchers to review results and make adjustments more rapidly, saving valuable computational resources and time.
+
+- Efficiency with large genomes: It is particularly well-suited for large genomes, especially those with scaffolds larger than 2GB. Traditional pipelines often require re-splitting large scaffolds for remapping, but ZippyPretext handles the scaling of pretext maps directly, eliminating the need for this extra step. This makes it an efficient choice for working with genomes that are difficult to manage using standard mapping approaches.
+
+Additionally, ZippyPretext’s scalability and streamlined workflow make it an ideal tool for generating pretext maps in projects like the Tree of Life, where large datasets and complex genomic structures are common. Overall, the pipeline enhances productivity by reducing both time and resource consumption while maintaining accuracy and reliability.
 
 ## Usage
 
