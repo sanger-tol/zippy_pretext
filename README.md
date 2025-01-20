@@ -19,19 +19,8 @@
 
 The pipeline requires a set of arguments.
 
-`fasta`
-fasta file before curation
-
-```
-aPelLes1_before_curation.fa
-```
-
-`sample`
-Output pretext map name
-```
-aPelLes1_after_curation
-```
-
+- `--fasta`
+   - The fasta file before curation, e.g., `/path/to/assembly_before_curation.fa`
 
 -->
 
